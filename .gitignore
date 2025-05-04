@@ -1,0 +1,25 @@
+# Ignore all screenshots by default
+screenshots/*
+
+# Except example_allure_report.png – include it!
+!screenshots/example_allure_report.png
+
+# Ignore other screenshot folders
+screenshots_failed/
+screenshots_failed_steps/
+
+# Ignore virtual environment and Python cache
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore Allure raw results and reports
+allure-results/
+report.html
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.log
+*.tmp
