@@ -101,3 +101,6 @@ Ensure full test stability and isolation
 Think like a QA Engineer – not just write tests
 
 📫 If you're a client, feel free to connect with me on LinkedIn or reach out via Upwork / Test.io profile!
+
+© 2025 Adam Fedorowicz  
+This project is licensed under the MIT License.
