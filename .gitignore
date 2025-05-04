@@ -2,7 +2,7 @@
 screenshots/*
 
 # Except example_allure_report.png – include it!
-!screenshots/example_allure_report.png
+!screenshots/allure_report_100.png
 
 # Ignore other screenshot folders
 screenshots_failed/

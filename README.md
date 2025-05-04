@@ -30,17 +30,17 @@ It covers full end-to-end testing of the [SauceDemo](https://www.saucedemo.com) 
 
 ## 📁 Folder Structure
 
-qa_automation_project/
-│
-├── tests/ # All test files (positive + negative)
-├── pages/ # Page Object classes (LoginPage, CheckoutPage, etc.)
-├── helpers/ # Common utilities (click, type, wait, logger)
-├── screenshots/ # Screenshots for passed steps
-├── screenshots_failed/ # Screenshots for failed test steps
-├── allure-results/ # Allure raw data (ignored in repo)
-├── requirements.txt # Python dependencies
-├── .gitignore # Files to exclude from Git
-└── README.md # You’re reading it
+<pre>
+qa_automation_project
+├── tests/ # All test files (positive + negative) 
+├── pages/ # Page Object classes (LoginPage, CheckoutPage, etc.) 
+├── helpers/ # Common utilities (click, type, wait, logger) 
+├── screenshots/ # Screenshots for passed steps 
+├── screenshots_failed/ # Screenshots for failed test steps 
+├── allure-results/ # Allure raw data (ignored in repo) 
+├── requirements.txt # Python dependencies 
+├── .gitignore # Files to exclude from Git 
+└── README.md </pre>
 
 
 ---
@@ -80,12 +80,14 @@ Below is an example of a successful Allure report (100% passed):
 ![Allure Report – 100% Passed](images/allure_report_100.png)
 
 
-👤 About Me as QA
+👤 About Me as QA:
+
 I am a QA Automation enthusiast with a strong understanding of Selenium, Pytest, and modern test architecture.
 My goal is to build reliable, readable, and real-world test frameworks using industry best practices.
 I'm now seeking freelance or remote work as a QA Engineer.
 
 ✅ Summary
+
 This project demonstrates my ability to:
 
 Build full-stack automated testing from scratch
