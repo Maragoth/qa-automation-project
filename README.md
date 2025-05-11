@@ -1,30 +1,33 @@
-# 🧪 QA Automation Project – E2E Testing with Selenium & Allure
+# 🛠️ QA Automation Project – E2E Testing with Selenium & Allure
 
-This project is a simulated freelance task for a QA Automation Engineer role.  
-It covers full end-to-end testing of the [SauceDemo](https://www.saucedemo.com) e-commerce site using **Selenium + Pytest + Allure**.
+This is a simulated freelance project created to demonstrate professional-level QA Automation skills.    
+It covers full end-to-end testing of the [SauceDemo](https://www.saucedemo.com) e-commerce site using **Selenium + Pytest + Allure**, following industry best practices.
 
 ---
 
 ## 🎯 Project Goals
 
-- ✅ Automate all main user flows (login, add to cart, checkout, logout)
-- ✅ Include positive and negative test cases
-- ✅ Capture screenshots and steps in Allure reports
-- ✅ Ensure 100% stability with helper-based architecture
-- ✅ Follow Page Object Model structure for clean, scalable code
+- ✅ Automate main user flows: login, add to cart, sort, checkout, logout
+- ✅ Cover both positive and negative test scenarios
+- ✅ Capture step-by-step screenshots and detailed logs
+- ✅ Ensure 100% test stability using custom helper architecture
+- ✅ Use Page Object Model for clean and scalable code
+- ✅ Generate Allure and HTML test reports
+- ✅ Run tests automatically via GitHub Actions CI
 
 ---
 
 ## 🧰 Tech Stack
 
-| Tool / Library     | Usage                            |
+| Tool / Library     | Purpose                          |
 |--------------------|----------------------------------|
 | Python             | Main programming language        |
-| Selenium           | Web automation                   |
-| Pytest             | Test framework                   |
+| Selenium           | Web automation engine            |
+| Pytest             | Test runner                      |
 | Allure             | Professional test reporting      |
-| Pytest-html        | Optional secondary report format |
-| Page Object Model  | Scalable test structure          |
+| Pytest-HTML        | Optional fallback report         |
+| GitHub Actions     | Continuous Integration (CI)      |
+| Page Object Model  | Scalable test design pattern     |
 
 ---
 
@@ -32,26 +35,37 @@ It covers full end-to-end testing of the [SauceDemo](https://www.saucedemo.com) 
 
 <pre>
 qa_automation_project
-├── tests/ # All test files (positive + negative) 
-├── pages/ # Page Object classes (LoginPage, CheckoutPage, etc.) 
-├── helpers/ # Common utilities (click, type, wait, logger) 
-├── screenshots/ # Screenshots for passed steps 
-├── screenshots_failed/ # Screenshots for failed test steps 
-├── allure-results/ # Allure raw data (ignored in repo) 
-├── requirements.txt # Python dependencies 
-├── .gitignore # Files to exclude from Git 
-└── README.md </pre>
+├── .github/workflows/           # GitHub Actions workflow (ci.yml)
+├── allure-report/               # Generated Allure HTML report
+├── allure-results/              # Allure raw data (ignored in repo)
+├── drivers/chromedriver-win64/ # Local ChromeDriver binary
+├── helpers/                     # Custom helper functions 
+├── images/                      # Images used in documentation 
+├── pages/                       # Page Object classes 
+├── reports/assets/             # Report-related files 
+├── screenshots/                # Screens from successful test steps
+├── screenshots_failed/         # Screenshots from failed test steps
+├── screenshots_failed_steps/   # Screenshots from failed helper steps
+├── tests/                       # Test cases (positive & negative)
+├── .gitignore                   # Files excluded from Git
+├── LICENSE                      # MIT License
+├── README.md                    # Project documentation
+├── conftest.py                  # Pytest config + fixtures
+├── pytest.ini                   # Pytest configuration file
+├── requirements.txt             # Python dependencies
+└── qa_automation_project.code-workspace # VSCode workspace config
+</pre>
 
 
 ---
 
 ## 🚀 How to Run Tests
 
-### 1. Clone the repository
+1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/qa-ecommerce-automation.git
-cd qa-ecommerce-automation
+git clone https://github.com/Maragoth/qa-automation-project
+cd qa-automation-project
 ```
 
 2. (Optional) Create virtual environment
@@ -70,7 +84,7 @@ pip install -r requirements.txt
 pytest tests/ --alluredir=allure-results
 ```
 
-5. Serve Allure report
+5. Generate and open Allure Report
 ```bash
 C:\Allure\bin\allure.bat serve allure-results
 ```
@@ -79,28 +93,46 @@ C:\Allure\bin\allure.bat serve allure-results
 Below is an example of a successful Allure report (100% passed):
 ![Allure Report – 100% Passed](images/allure_report_100.png)
 
+## ⚙️ Continuous Integration (CI) – GitHub Actions
+This project includes full CI setup with GitHub Actions:
 
-👤 About Me as QA:
+- Automatically runs on each push to main
 
-I am a QA Automation enthusiast with a strong understanding of Selenium, Pytest, and modern test architecture.
-My goal is to build reliable, readable, and real-world test frameworks using industry best practices.
-I'm now seeking freelance or remote work as a QA Engineer.
+- Generates HTML or Allure reports
 
-✅ Summary
+- Uploads the report as artifact (v4)
+
+- Does not stop the workflow on test failure (continue-on-error: true)
+
+Artifacts
+After each run, reports are available for download under GitHub Actions → Run → Artifacts tab.
+
+## ✅ Summary
 
 This project demonstrates my ability to:
 
-Build full-stack automated testing from scratch
+- Build full-stack automated testing from scratch
 
-Design test architecture using Page Object Model
+- Design test architecture using Page Object Model
 
-Generate readable and professional test reports
+- Generate readable and professional test reports
 
-Ensure full test stability and isolation
+- Ensure full test stability and isolation
 
-Think like a QA Engineer – not just write tests
+- Think like a QA Engineer – not just write tests
 
-📫 If you're a client, feel free to connect with me on LinkedIn or reach out via Upwork / Test.io profile!
+## 👤 About Me as QA:
+
+My name is Adam Fedorowicz, a QA Automation Engineer passionate about building real-world testing frameworks using scalable architecture.
+I specialize in Selenium, Pytest, API testing (Postman), and CI workflows.
+This project is part of my growing QA portfolio, aiming to showcase reliable, clean, and professional test automation.
+
+## 📫 Find Me Online
+
+- 🌐 [LinkedIn – Adam Fedorowicz](https://www.linkedin.com/in/adam-fedorowicz-UK)
+- 💻 [GitHub – Maragoth](https://github.com/Maragoth)
+- 💼 [Upwork – QA Automation Engineer](https://www.upwork.com/freelancers/~018d6c0e188850f30d?mp_source=share)
+
 
 © 2025 Adam Fedorowicz  
 This project is licensed under the MIT License.
