@@ -3,6 +3,15 @@
 This is a simulated freelance project created to demonstrate professional-level QA Automation skills.    
 It covers full end-to-end testing of the [SauceDemo](https://www.saucedemo.com) e-commerce site using **Selenium + Pytest + Allure**, following industry best practices.
 
+
+![Tests](https://img.shields.io/badge/Tests-9-success?style=flat-square&color=blueviolet&logo=pytest&logoColor=white)
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Online-blue?logo=github)](https://maragoth.github.io/qa-automation-project/)  
+
+![platform](https://img.shields.io/badge/platform-Windows%20%7C%20Cross--Platform-lightgrey)
+![license](https://img.shields.io/github/license/Maragoth/qa-automation-project)
+
+
 ---
 
 ## 🎯 Project Goals
@@ -106,6 +115,13 @@ This project includes full CI setup with GitHub Actions:
 
 Artifacts
 After each run, reports are available for download under GitHub Actions → Run → Artifacts tab.
+
+![CI](https://github.com/Maragoth/qa-automation-project/actions/workflows/allure-deploy.yml/badge.svg)
+
+## 📊 Live Allure Report
+
+[![Allure Report](https://img.shields.io/badge/Allure-View_Report-green?logo=allure&logoColor=white)](https://maragoth.github.io/qa-automation-project/)
+
 
 ## ✅ Summary
 
